@@ -1,0 +1,21 @@
+.support .faq {
+    margin-bottom: 65px;
+}
+.support .faq .title {
+    font-family: 'MuseoSansCyrl';
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 17px;
+}
+@media screen and (width < 992px) {
+    .support .faq .title {
+        font-size: 30px;
+    }
+}
+@media screen and (width < 768px) {
+    .support .faq .title {
+        padding: 0 16px;
+    }
+}

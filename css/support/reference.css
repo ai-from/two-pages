@@ -1,0 +1,84 @@
+.support .reference {
+    margin-bottom: 80px;
+    padding: 0 16px;
+}
+.support .reference .title {
+    font-family: 'MuseoSansCyrl';
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.support .reference .accordion {
+    width: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+}
+.support .reference .accordion .item {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 0 30px 0 var(--black-5);
+    padding: 20px 40px 16px 24px;
+    position: relative;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+.support .reference .accordion .item .front {}
+.support .reference .accordion .item .front .title {
+    font-family: 'MuseoSansCyrl';
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 4px;
+}
+.support .reference .accordion .item .front .desc {
+    font-family: 'MuseoSansCyrl';
+    font-size: 13px;
+    line-height: 18px;;
+    font-weight: 500;
+    color: var(--grey_2);
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+.support .reference .accordion .item .front img {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    transition: all linear var(--time);
+}
+.support .reference .accordion .item .back {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: all linear var(--time);
+}
+.support .reference .accordion .item .back .desc {
+    font-family: 'MuseoSansCyrl';
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey_2);
+    text-align: left;
+}
+/* open accordion item */
+.support .reference .accordion .item.open .front img {
+    transform: rotate(90deg);
+}
+.support .reference .accordion .item.open .back {
+    height: auto;
+    opacity: 1;
+    padding: 10px 0 10px;
+}
+@media screen and (width < 1200px) {
+    .support .reference .accordion {
+
+    }
+}
+@media screen and (width < 768px) {
+    .support .reference .title {
+        font-size: 30px;
+    }
+}

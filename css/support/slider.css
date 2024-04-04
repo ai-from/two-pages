@@ -1,0 +1,119 @@
+.slider {
+    position: relative;
+    width: 1224px;
+    margin: 0 auto;
+    left: -12px;
+}
+.slider .slick-track {
+    width: 4300px !important;
+    padding: 15px 0;
+}
+.slider .slick-slide {
+    width: 282px !important;
+    margin: 0 12px;
+    outline: none;
+}
+.slider .item {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 0 30px 0 var(--black-5);
+    padding: 16px 5px 16px 16px;
+}
+.slider .item .inner {
+    display: grid;
+    overflow: hidden;
+    height: 128px;
+}
+.slider .item .title {
+    font-family: 'MuseoSansCyrl';
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 8px;
+}
+.slider .item .desc {
+    font-family: 'MuseoSansCyrl';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--grey_2);
+}
+.slider .item img {
+    position: relative;
+}
+.slider .item .title-img {
+    grid-template-columns: 1fr min-content;
+}
+.slider .item .title-img img {
+    top: 18px;
+    right: 3px;
+}
+.slider .item .title-desc {
+    grid-template-rows: repeat(2, min-content);
+}
+.slider .item .title-desc-img {
+    grid-template: repeat(2, min-content) / 1fr min-content;
+}
+.slider .item .title-desc-img .title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.slider .item .title-desc-img .desc {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.slider .item .title-desc-img img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    top: 21px;
+    right: 0;
+}
+/* slider buttons */
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: var(--white);
+    box-shadow: 0 1px 7px 0 var(--black-9);
+    border: none;
+    outline: none;
+    opacity: .5;
+    transition: all linear var(--time);
+    cursor: pointer;
+}
+.slider .slick-arrow:hover {
+    opacity: 1;
+}
+.slider .slick-prev {
+    left: 12px;
+}
+.slider .slick-prev:before {
+    content: url('../../assets/img/support/faq/arrow-left.svg');
+}
+.slider .slick-next {
+    right: 12px;
+}
+.slider .slick-next:before {
+    content: url('../../assets/img/support/faq/arrow-right.svg');
+}
+@media screen and (width < 1224px) {
+    .slider {
+        width: 918px;
+        left: unset;
+    }
+}
+@media screen and (width < 992px) {
+    .slider {
+        width: 612px;
+    }
+}
+@media screen and (width < 768px) {
+    .slider {
+        width: 306px;
+    }
+}

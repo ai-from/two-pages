@@ -1,0 +1,44 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.nav a {
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark);
+    text-decoration: none;
+    transition: all linear var(--time);
+}
+.nav a:hover {
+    color: var(--blue);
+}
+.github {
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.github a {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: 2px;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    font-family: 'MuseoSansCyrl';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark);
+    transition: all linear var(--time);
+}
+.github a:hover {
+    color: var(--blue);
+}
