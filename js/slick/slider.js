@@ -5,6 +5,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: '<button class="slick-prev slick-arrow" type="button"></button>',
         nextArrow: '<button class="slick-next slick-arrow" type="button"></button>',
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 1224,
