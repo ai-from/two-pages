@@ -1,5 +1,6 @@
 .support .connection {
-    width: 996px;
+    width: 100%;
+    max-width: 996px;
     background: var(--white);
     border-radius: 40px;
     margin: 0 auto 80px;
@@ -48,11 +49,6 @@
 }
 .support .connection .buttons a:hover {
     box-shadow: 0 0 10px 0 var(--green-50);
-}
-@media screen and (width < 1200px) {
-    .support .connection {
-        width: 100%;
-    }
 }
 @media screen and (width < 992px) {
     .support .connection .title {
