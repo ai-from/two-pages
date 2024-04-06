@@ -29,12 +29,16 @@
     gap: 8px;
     flex-wrap: wrap;
 }
+.support header .buttons .wrap {
+    display: flex;
+    gap: 8px;
+}
 .support header .buttons button {
     background: var(--white);
-    border-radius: 12px;
+    border-radius: 5px;
     border: none;
     outline: none;
-    width: 148px;
+    width: 140px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -62,11 +66,6 @@
     .support header .desc {
         font-size: 16px;
     }
-    .support header .buttons button {
-        width: 160px;
-        height: 48px;
-        font-size: 15px;
-    }
 }
 @media screen and (min-width: 768px) {
     .support header h1 {
@@ -75,6 +74,12 @@
     .support header .desc {
         width: 60%;
         font-size: 17px;
+    }
+    .support header .buttons button {
+        width: 160px;
+        height: 48px;
+        font-size: 15px;
+        border-radius: 12px;
     }
 }
 @media screen and (min-width: 992px) {

@@ -26,16 +26,16 @@
 .support .connection .buttons {
     display: flex;
     width: 100%;
-    gap: 12px;
+    gap: 4px;
     justify-content: start;
     padding-top: 14px;
     flex-wrap: wrap;
 }
 .support .connection .buttons a {
     text-decoration: none;
-    width: 46px;
-    height: 46px;
-    border-radius: 13.33px;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
     background:var(--grey);
     display: flex;
     justify-content: center;
@@ -66,5 +66,6 @@
     .support .connection .buttons a {
         width: 56px;
         height: 56px;
+        border-radius: 12px;
     }
 }
