@@ -49,10 +49,10 @@
     outline: none;
     cursor: pointer;
     transition: all linear var(--time);
+    border-radius: 5px;
 }
 .article footer .buttons .chat {
     background: var(--green);
-    border-radius: 12px;
     font-family: 'MuseoSansCyrl';
     font-size: 15px;
     font-weight: 700;
@@ -72,7 +72,6 @@
     width: 48px;
     height: 48px;
     background: var(--grey);
-    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,5 +85,10 @@
     }
     .article footer .buttons .chat {
         width: 224px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .article footer .buttons button {
+        border-radius: 12px;
     }
 }
