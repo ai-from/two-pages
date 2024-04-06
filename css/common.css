@@ -5,3 +5,9 @@
 @import url('main.css');
 @import url('support/support.css');
 @import url('article/article.css');
+
+.support .connection,
+.support .faq,
+.support .reference {
+    display: none;
+}
