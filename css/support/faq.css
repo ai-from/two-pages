@@ -3,19 +3,15 @@
 }
 .support .faq .title {
     font-family: 'MuseoSansCyrl';
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--dark);
     text-align: center;
     margin-bottom: 17px;
+    padding: 0 16px;
 }
-@media screen and (width < 992px) {
+@media screen and (min-width: 992px) {
     .support .faq .title {
-        font-size: 30px;
-    }
-}
-@media screen and (width < 768px) {
-    .support .faq .title {
-        padding: 0 16px;
+        font-size: 40px;
     }
 }

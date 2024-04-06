@@ -5,27 +5,23 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: '<button class="slick-prev slick-arrow" type="button"></button>',
         nextArrow: '<button class="slick-next slick-arrow" type="button"></button>',
-        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 1224,
                 settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1
+                  slidesToShow: 3
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1
+                  slidesToShow: 2
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToShow: 1
                 }
             }
         ]

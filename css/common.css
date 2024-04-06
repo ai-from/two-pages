@@ -6,7 +6,6 @@
 @import url('support/support.css');
 @import url('article/article.css');
 
-.support .faq,
 .support .reference {
     display: none;
 }
