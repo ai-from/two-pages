@@ -22,12 +22,26 @@
     width: 40%;
     margin: 0 auto 39px;
 }
-.support header .buttons {
+/* .support header .buttons {
     display: grid;
     grid-template-columns: repeat(4, min-content);
     justify-content: center;
     grid-gap: 8px;
     flex-wrap: wrap;
+} */
+.support header .buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: -webkit-min-content 8px -webkit-min-content 8px -webkit-min-content 8px -webkit-min-content;
+    -ms-grid-columns: min-content 8px min-content 8px min-content 8px min-content;
+    grid-template-columns: repeat(4, -webkit-min-content);
+    grid-template-columns: repeat(4, min-content);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 8px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .support header .buttons button {
     background: var(--white);
