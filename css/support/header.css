@@ -51,6 +51,11 @@
 .support header .buttons button:hover {
     background: var(--white-50);
 }
+@media screen and (min-width >= 768px) {
+    .support header h1 {
+        font-size: 60px;
+    }
+}
 @media screen and (min-width >= 576px) {
     .support header h1 {
         font-size: 40px;
