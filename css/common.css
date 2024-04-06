@@ -5,7 +5,3 @@
 @import url('main.css');
 @import url('support/support.css');
 @import url('article/article.css');
-
-.support .reference {
-    display: none;
-}

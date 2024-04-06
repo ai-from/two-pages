@@ -14,7 +14,7 @@
 }
 .slider .item {
     background: var(--white);
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: 0 0 30px 0 var(--black-5);
     padding: 16px 5px 16px 16px;
 }
@@ -61,26 +61,27 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    width: 44px;
-    height: 44px;
+    width: 14px;
+    height: 14px;
     border-radius: 100%;
     border: none;
     outline: none;
     transition: all linear var(--time);
     cursor: pointer;
     background: transparent;
+    padding: 0;
 }
 .slider .slick-arrow:hover {
     opacity: 1;
 }
 .slider .slick-prev {
-    left: -18px;
+    left: -2px
 }
 .slider .slick-prev:before {
     content: url('../../assets/img/support/faq/arrow-left.svg');
 }
 .slider .slick-next {
-    right: -18px;
+    right: -2px;
 }
 .slider .slick-next:before {
     content: url('../../assets/img/support/faq/arrow-right.svg');
@@ -89,6 +90,11 @@
     .slider .slick-arrow {
         background: var(--white);
         box-shadow: 0 1px 7px 0 var(--black-9);
+        width: 44px;
+        height: 44px;
+    }
+    .slider .item {
+        border-radius: 16px;
     }
     .slider .slick-prev {
         left: -28px;
