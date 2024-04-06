@@ -23,8 +23,6 @@
     margin: 0 auto 39px;
 }
 .support header .buttons {
-    -webkit-display: grid;
-    -webkit-grid-template-columns: repeat(4, min-content);
     display: grid;
     grid-template-columns: repeat(4, min-content);
     justify-content: center;
