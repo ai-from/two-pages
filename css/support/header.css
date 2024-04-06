@@ -27,10 +27,6 @@
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(4, min-content);
-    justify-content: center;
-    grid-gap: 8px;*/
 }
 .support header .buttons button {
     background: var(--white);
@@ -55,6 +51,18 @@
 .support header .buttons button:hover {
     background: var(--white-50);
 }
+@media screen and (min-width: 320px) {
+    .support header h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .support header h1 {
+        font-size: 30px;
+    }
+}
+
+
 @media screen and (width < 1200px) {
     .support header .desc {
         width: 50%;
