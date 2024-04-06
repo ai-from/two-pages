@@ -1,7 +1,7 @@
 .support header {
-    background: url('../../assets/img/support/header/telegram.svg') no-repeat 0 34%, url('../../assets/img/support/header/hand.svg') no-repeat 100% 101%, var(--blue);
-    border-radius: 40px;
-    padding: 40px 0 54px;
+    background: url('../../assets/img/support/header/telegram.svg') no-repeat 0 34%, url('../../assets/img/support/header/hand.svg') no-repeat calc(100% + 135px) 101%, var(--blue);
+    border-radius: 16px;
+    padding: 40px 16px 54px;
     margin-bottom: 82px;
 }
 .support header h1 {
@@ -14,12 +14,13 @@
 }
 .support header .desc {
     font-family: 'MuseoSansCyrl';
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--white);
-    line-height: 23px;
     text-align: center;
-    width: 40%;
+    width: 100%;
+    max-width: 500px;
+    line-height: 22px;
     margin: 0 auto 39px;
 }
 .support header .buttons {
@@ -33,16 +34,15 @@
     border-radius: 12px;
     border: none;
     outline: none;
-    width: 160px;
-    height: 48px;
-    display: grid;
-    grid-template-columns: repeat(2, min-content);
+    width: 148px;
+    height: 40px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 8px;
+    gap: 8px;
     white-space: nowrap;
     font-family: 'MuseoSansCyrl';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--dark);
     cursor: pointer;
@@ -51,56 +51,40 @@
 .support header .buttons button:hover {
     background: var(--white-50);
 }
-@media screen and (width < 1200px) {
-    .support header .desc {
-        width: 50%;
-    }
-}
-@media screen and (width < 992px) {
-    .support header .desc {
-        width: 60%;
-    }
-}
-@media screen and (max-width < 768px) {
+@media screen and (min-width: 576px) {
     .support header {
-        padding: 40px 16px 54px;
+        background: url('../../assets/img/support/header/telegram.svg') no-repeat 0 34%, url('../../assets/img/support/header/hand.svg') no-repeat 100% 101%, var(--blue);
+        border-radius: 40px;
     }
     .support header h1 {
         font-size: 40px;
     }
     .support header .desc {
-        font-size: 15px;
-    }
-    .support header .buttons {
-        grid-template: repeat(4, min-content) / min-content;
+        font-size: 16px;
     }
     .support header .buttons button {
-        width: 148px;
-        height: 40px;
-        font-size: 14px;
-    }
-}
-@media screen and (max-width < 576px) {
-    .support header {
-        background: url('../../assets/img/support/header/telegram.svg') no-repeat 0 34%, url('../../assets/img/support/header/hand.svg') no-repeat calc(100% + 135px) 101%, var(--blue);
-        border-radius: 16px;
-    }
-    .support header h1 {
-        font-size: 30px;
-    }
-    .support header .desc {
-        width: 100%;
-        line-height: 22px;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .support header h1 {
-        font-size: 40px;
+        width: 160px;
+        height: 48px;
+        font-size: 15px;
     }
 }
 @media screen and (min-width: 768px) {
     .support header h1 {
         font-size: 60px;
+    }
+    .support header .desc {
+        width: 60%;
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .support header .desc {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .support header .desc {
+        width: 40%;
+        line-height: 23px;
     }
 }
